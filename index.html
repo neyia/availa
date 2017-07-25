@@ -26,51 +26,53 @@
 </div>
 
 <section class="content content--search">
-    <div class="container">
-        <div class="title">
-            <h2 class="title__item">
-                Imaging Appointment Availability
-            </h2>
+    <!--<div class="container">-->
+        <div class="wrapper wrapper-search">
+            <div class="title">
+                <h2 class="title__item">
+                    Imaging Appointment Availability
+                </h2>
+            </div>
+            <div class="search">
+                <form class="form" action="" method="post">
+                    <div class="form-field form-field--secondary">
+                        <label for="resources" class="label">
+                            <select id="resources" name="resources" class="select select--secondary">
+                                <option>MRI</option>
+                                <option>MRI2</option>
+                                <option>MRI3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary">
+                        <label for="resources" class="label">
+                            <select id="site" name="site" class="select select--secondary">
+                                <option>BWH</option>
+                                <option>BWH2</option>
+                                <option>BWh3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary">
+                        <label for="date" class="label">
+                            <input id="date" type="text" name="date" value="" class="text text--secondary" placeholder="Date" />
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary">
+                        <label for="date" class="label">
+                            <input id="zipcode" type="text" name="zipcode" value="" class="text text--secondary" placeholder="Zipcode/address" />
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary">
+                        <label for="submit" class="label label-icon">
+                            <i class="icon icon-search"></i>
+                            <input id="submit" type="submit" name="submit" value="Search" class="button button--icon button--secondary" />
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="search">
-            <form class="form" action="" method="post">
-                <div class="form-field">
-                    <label for="resources" class="label">
-                        <select id="resources" name="resources" class="select">
-                            <option>MRI</option>
-                            <option>MRI2</option>
-                            <option>MRI3</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="form-field">
-                    <label for="resources" class="label">
-                        <select id="site" name="site" class="select">
-                            <option>BWH</option>
-                            <option>BWH2</option>
-                            <option>BWh3</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="form-field">
-                    <label for="date" class="label">
-                        <input id="date" type="text" name="date" value="" class="text" />
-                    </label>
-                </div>
-                <div class="form-field">
-                    <label for="date" class="label">
-                        <input id="zipcode" type="text" name="zipcode" value="" class="text" />
-                    </label>
-                </div>
-                <div class="form-field">
-                    <label for="submit" class="label label-icon">
-                        <i class="icon icon-search"></i>
-                        <input id="submit" type="submit" name="submit" value="Search" class="button button-secondary" />
-                    </label>
-                </div>
-            </form>
-        </div>
-    </div>
+    <!--</div>-->
 </section>
 
 <div class="footer">
@@ -94,6 +96,17 @@
 
 </div>
 <script src="scripts/jquery-3.2.1.min.js"></script>
-
+<script src="scripts/jquery.smartPlaceholder.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.text').smartPlaceholder({
+            backgroundColor: 'transparent',
+            color: '#a6a9b5',
+            position: 'top',
+            mode: 'inline',
+            size: 14
+        });
+    });
+</script>
 </body>
 </html>

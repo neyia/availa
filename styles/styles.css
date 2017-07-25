@@ -489,6 +489,12 @@ p {
 .button--primary {
   background-color: #37a8af;
 }
+.button--secondary {
+  background-color: #1b1f3f;
+}
+.button--icon {
+  width: 185px;
+}
 .button--disabled,
 .button:disabled {
   cursor: default;
@@ -534,7 +540,14 @@ p {
 .form-field:first-child {
   margin: 0;
 }
-.text {
+.form-field--secondary {
+  margin: 0 0 0 -2px;
+}
+.form-field--secondary:first-child {
+  margin: 0;
+}
+.text,
+.select {
   outline: none;
   width: 337px;
   height: 57px;
@@ -545,6 +558,26 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  -moz-border-radius: 0;
+  -khtml-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -icab-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.text--secondary,
+.select--secondary {
+  border: solid 2px #1b1f3f;
+  width: 267px;
 }
 /**
  * INTR Style Guide Header
@@ -554,8 +587,29 @@ p {
  * Container styles
  * --------------------------------
 */
+.title {
+  padding-bottom: 35px;
+}
 .title__item {
   margin: 0;
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0.043rem;
+}
+/**
+ * Coach-dashboard. Search
+ * --------------------------------
+*/
+/**
+ * Table of Contents Orders Page:
+*/
+.search .form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /**
 * INTR Style Guide Header
@@ -597,6 +651,17 @@ body {
   display: flex;
 }
 .content--search {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#449ba3+0,4298a5+14,4294a8+44,418fac+63,408dab+83,408daf+100 */
   background: #449ba3;
   /* Old browsers */
@@ -628,6 +693,16 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.wrapper-search {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
 }
 /**
 * INTR Style Guide Header

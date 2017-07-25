@@ -20,6 +20,12 @@
 .button--primary {
   background-color: #37a8af;
 }
+.button--secondary {
+  background-color: #1b1f3f;
+}
+.button--icon {
+  width: 185px;
+}
 .button--disabled,
 .button:disabled {
   cursor: default;
