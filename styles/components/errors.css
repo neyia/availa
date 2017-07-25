@@ -1,0 +1,22 @@
+/**
+ * INTR Style Guide Errors
+ * --------------------------------
+*/
+/**
+ * Errors styles
+ * --------------------------------
+*/
+.error-block .input,
+.error-block .select,
+.error-block .ui-selectmenu-button {
+  border: 1px solid #c80000;
+  background-color: #fae6e6;
+}
+.error {
+  color: #c80000;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 0 0 10px 0;
+}

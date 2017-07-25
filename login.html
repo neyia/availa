@@ -5,6 +5,7 @@
     <title>Availa</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
 </head>
 <body>
 
@@ -24,12 +25,12 @@
         <form class="form form--absolute" action="" method="post">
             <div class="form-field">
                 <label for="email" class="label">
-                    <input id="email" name="email" type="text" class="text" />
+                    <input id="email" name="email" type="text" class="text" placeholder="Email"/>
                 </label>
             </div>
             <div class="form-field">
                 <label for="password" class="label">
-                    <input id="password" name="password" type="password" class="text" />
+                    <input id="password" name="password" type="password" class="text" placeholder="Password"/>
                 </label>
             </div>
             <div class="form-field btn-block">
@@ -41,6 +42,17 @@
     </div>
 </section>
 
-
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/jquery.smartPlaceholder.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.text').smartPlaceholder({
+            color: '#a6a9b5',
+            size: 14,
+            position: 'top',
+            mode: 'inline'
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+/**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Header styles
+ * --------------------------------
+*/
+.header {
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+.header {
+  min-width: 310px;
+  height: 75px;
+  background-color: #232d37;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  /*крайне важный элемент, пуст всегда будет сверху*/
+}
+@media only screen and (max-width: 858px) {
+  .header {
+    height: 60px;
+    text-align: center;
+  }
+}

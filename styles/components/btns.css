@@ -1,0 +1,30 @@
+/**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Buttons styles
+ * --------------------------------
+*/
+.button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 22px;
+  text-align: center;
+  line-height: normal;
+  width: 337px;
+  height: 57px;
+}
+.button--primary {
+  background-color: #37a8af;
+}
+.button--disabled,
+.button:disabled {
+  cursor: default;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.03;
+  -khtml-opacity: 0.03;
+  opacity: 0.03;
+}

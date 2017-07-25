@@ -1,0 +1,28 @@
+/**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Container styles
+ * --------------------------------
+*/
+.content {
+  height: 100%;
+}
+.content--secondary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content-name {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-color: #1b1f3f;
+}
+.content-form {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}

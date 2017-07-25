@@ -1,0 +1,21 @@
+/**
+ * INTR Style Guide Upload avatar
+ * --------------------------------
+*/
+/**
+ * Upload avatar styles
+ * --------------------------------
+*/
+.ui-widget.ui-widget-content.ui-autocomplete.ui-customer-search {
+  border: 1px solid #b9c3cd;
+  overflow-x: hidden;
+  max-height: 144px;
+  width: 269px;
+  padding: 0;
+}
+.ui-widget.ui-widget-content.ui-autocomplete.ui-customer-search .ui-menu-item {
+  line-height: normal;
+  color: #232d37;
+  font-size: 14px;
+  height: auto;
+}
