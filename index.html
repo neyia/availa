@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Availa</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 
@@ -27,51 +28,51 @@
 
 <section class="content content--search">
     <!--<div class="container">-->
-        <div class="wrapper wrapper-search">
-            <div class="title">
-                <h2 class="title__item">
-                    Imaging Appointment Availability
-                </h2>
-            </div>
-            <div class="search">
-                <form class="form" action="" method="post">
-                    <div class="form-field form-field--secondary">
-                        <label for="resources" class="label">
-                            <select id="resources" name="resources" class="select select--secondary">
-                                <option>MRI</option>
-                                <option>MRI2</option>
-                                <option>MRI3</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="form-field form-field--secondary">
-                        <label for="resources" class="label">
-                            <select id="site" name="site" class="select select--secondary">
-                                <option>BWH</option>
-                                <option>BWH2</option>
-                                <option>BWh3</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="form-field form-field--secondary">
-                        <label for="date" class="label">
-                            <input id="date" type="text" name="date" value="" class="text text--secondary" placeholder="Date" />
-                        </label>
-                    </div>
-                    <div class="form-field form-field--secondary">
-                        <label for="date" class="label">
-                            <input id="zipcode" type="text" name="zipcode" value="" class="text text--secondary" placeholder="Zipcode/address" />
-                        </label>
-                    </div>
-                    <div class="form-field form-field--secondary">
-                        <label for="submit" class="label label-icon">
-                            <i class="icon icon-search"></i>
-                            <input id="submit" type="submit" name="submit" value="Search" class="button button--icon button--secondary" />
-                        </label>
-                    </div>
-                </form>
-            </div>
+    <div class="wrapper wrapper-search">
+        <div class="title">
+            <h2 class="title__item">
+                Imaging Appointment Availability
+            </h2>
         </div>
+        <div class="search">
+            <form class="form" action="" method="post">
+                <div class="form-field form-field--secondary">
+                    <label for="resources" class="label">
+                        <select id="resources" name="resources" class="select select--secondary">
+                            <option>MRI</option>
+                            <option>MRI2</option>
+                            <option>MRI3</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-field form-field--secondary">
+                    <label for="site" class="label">
+                        <select id="site" name="site" class="select select--secondary">
+                            <option>BWH</option>
+                            <option>BWH2</option>
+                            <option>BWh3</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-field form-field--secondary">
+                    <label for="date" class="label">
+                        <input id="date" type="text" name="date" value="" class="text text--secondary" placeholder="Date" />
+                    </label>
+                </div>
+                <div class="form-field form-field--secondary">
+                    <label for="date" class="label">
+                        <input id="zipcode" type="text" name="zipcode" value="" class="text text--secondary" placeholder="Zipcode/address" />
+                    </label>
+                </div>
+                <div class="form-field form-field--secondary">
+                    <label for="submit" class="label label-icon">
+                        <i class="icon icon-search"></i>
+                        <input id="submit" type="submit" name="submit" value="Search" class="button button--icon button--secondary" />
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
     <!--</div>-->
 </section>
 
@@ -96,6 +97,7 @@
 
 </div>
 <script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/jquery-ui.js"></script>
 <script src="scripts/jquery.smartPlaceholder.min.js"></script>
 <script type="text/javascript">
     $(function() {
@@ -106,6 +108,17 @@
             mode: 'inline',
             size: 14
         });
+    });
+    $( function() {
+        $( '#date' ).datepicker({
+            dateFormat: 'd MM, y'
+        });
+    });
+    $(function() {
+        $('.select')
+            .selectmenu()
+            .selectmenu('menuWidget')
+            .addClass('overflow');
     });
 </script>
 </body>
