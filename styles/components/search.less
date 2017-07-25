@@ -1,0 +1,126 @@
+/**
+ * Coach-dashboard. Search
+ * --------------------------------
+*/
+/**
+ * Table of Contents Orders Page:
+*/
+@import "../variables";
+
+.search {
+    padding: @infelicity 0 0;
+}
+
+.quick-search {
+    .flex();
+    .align-items(flex-start);
+    .justify-content(space-between);
+
+    @media only screen  and(max-width: (@big_mobile)) {
+        flex-flow: column;
+    }
+    &__advanced{
+        font-size: 14px;
+        @media only screen  and(max-width: (@big_mobile)) {
+            padding-bottom: 20px;
+        }
+    }
+    &__block {
+        &:first-child {
+            width: 80%;
+
+            @media only screen  and(max-width: (@big_mobile)) {
+                width: 100%;
+                padding-bottom: 0;
+            }
+        }
+
+        @media only screen  and(max-width: (@big_mobile)) {
+            padding-bottom: 20px;
+        }
+
+        .label__span {
+            width:  90px;
+            margin: 0 25px 0 0;
+
+            @media only screen  and(max-width: (900px)) {
+                margin: 0 5px 0 0;
+            }
+
+            @media only screen  and(max-width: (@big_mobile)) {
+                display: block;
+                padding-bottom: 10px;
+            }
+        }
+
+        .input{
+            @media only screen  and(max-width: (@big_mobile)) {
+                max-width: none;
+            }
+        }
+    }
+}
+
+.advanced-search {
+    &--form {
+        .flex();
+        .align-items(flex-start);
+        .justify-content(space-between);
+
+        @media only screen  and(max-width: (@tablet_horizontal)) {
+            flex-flow: column;
+            .align-items(flex-start);
+        }
+    }
+
+    &__block {
+        width:      50%;
+        text-align: right;
+
+        &:first-child {
+            text-align: left;
+        }
+
+        @media only screen  and(max-width: (@tablet_horizontal)) {
+            text-align: left;
+            width:      100%;
+        }
+
+        @media only screen  and(max-width: (@big_mobile)) {
+            padding-bottom: 20px;
+        }
+
+        .label__span {
+            width:  90px;
+            margin: 0 25px 0 0;
+
+            @media only screen  and(max-width: (900px)) {
+                margin: 0 5px 0 0;
+            }
+            @media only screen  and(max-width: (@big_mobile)) {
+                display: block;
+                padding-bottom: 10px;
+            }
+        }
+        .input{
+            @media only screen  and(max-width: (@big_mobile)) {
+                max-width: none;
+            }
+        }
+
+        .btn-block {
+            width:           100%;
+            display:         flex;
+            max-width:       none;
+            justify-content: flex-end;
+
+            @media only screen  and(max-width: (@tablet_horizontal)) {
+                justify-content: flex-start;
+            }
+
+            @media only screen  and(max-width: (@big_mobile)) {
+                justify-content: center;
+            }
+        }
+    }
+}

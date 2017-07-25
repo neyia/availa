@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Availa</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 <body>
 
-<form class="form" action="" method="post">
-    <div class="form-field">
-        <label for="email" class="label">
-            <input id="email" name="email" type="text" class="text" />
-        </label>
+<section class="content content--secondary">
+
+    <div class="content-name">
+        <div class="logo logo--absolute">
+            <a href="javascript:void(0)" class="logo__link link">
+                <span class="logo__item"></span>
+                <span class="logo__item logo__item--2"></span>
+                <span class="logo__item logo__item--3"></span>
+                <span class="logo__text">Imaging Availability</span>
+            </a>
+        </div>
     </div>
-    <div class="form-field">
-        <label for="password" class="label">
-            <input id="password" name="password" type="password" class="text" />
-        </label>
+    <div class="content-form">
+        <form class="form form--absolute" action="" method="post">
+            <div class="form-field">
+                <label for="email" class="label">
+                    <input id="email" name="email" type="text" class="text" />
+                </label>
+            </div>
+            <div class="form-field">
+                <label for="password" class="label">
+                    <input id="password" name="password" type="password" class="text" />
+                </label>
+            </div>
+            <div class="form-field btn-block">
+                <label for="submit" class="label">
+                    <input id="submit" type="submit" name="submit" value="Log In" class="button button--primary" />
+                </label>
+            </div>
+        </form>
     </div>
-    <div class="form-field">
-        <label for="submit" class="label">
-            <input id="submit" type="submit" name="submit" value="Log In" class="button button-primary" />
-        </label>
-    </div>
-</form>
+</section>
+
 
 </body>
 </html>

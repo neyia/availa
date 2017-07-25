@@ -1,0 +1,50 @@
+/**
+* INTR Style Guide Header
+* --------------------------------
+*/
+/**
+ * Background screen styles
+ * --------------------------------
+*/
+@import "../variables";
+
+.screen {
+    background: @gray_bg_8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+    .transition (@item:all,@time:0.15s,@var:ease-out);
+}
+.video-container {
+    display: none;
+    background: @gray_bg_8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 9;
+    .transition (@item:all,@time:0.15s,@var:ease-out);
+}
+.screen.is-visible {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.screen-spinner{
+    background: @gray_bg_8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 12;
+    .transition (@item:all,@time:0.15s,@var:ease-out);
+}
