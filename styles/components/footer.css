@@ -1,0 +1,34 @@
+/**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Footer styles
+ * --------------------------------
+*/
+.footer {
+  padding: 25px 0;
+}
+.footer-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.footer-list__item {
+  margin-left: 50px;
+}
+.footer-list__item:first-child {
+  margin: 0;
+}
+.footer-list__img {
+  max-width: 170px;
+  max-height: 42px;
+}

@@ -414,6 +414,9 @@ p {
  * Logo styles
  * --------------------------------
 */
+.logo {
+  position: relative;
+}
 .logo__link {
   text-transform: uppercase;
   padding: 10px 0 10px 50px;
@@ -544,6 +547,17 @@ p {
   box-sizing: border-box;
 }
 /**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Container styles
+ * --------------------------------
+*/
+.title__item {
+  margin: 0;
+}
+/**
 * INTR Style Guide Header
 * --------------------------------
 */
@@ -582,6 +596,19 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.content--search {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#449ba3+0,4298a5+14,4294a8+44,418fac+63,408dab+83,408daf+100 */
+  background: #449ba3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #449ba3 0%, #4298a5 14%, #4294a8 44%, #418fac 63%, #408dab 83%, #408daf 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #449ba3 0%, #4298a5 14%, #4294a8 44%, #418fac 63%, #408dab 83%, #408daf 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #449ba3 0%, #4298a5 14%, #4294a8 44%, #418fac 63%, #408dab 83%, #408daf 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#449ba3', endColorstr='#408daf', GradientType=0);
+  /* IE6-9 */
+}
 .content-name {
   width: 50%;
   height: 100%;
@@ -592,4 +619,110 @@ body {
   width: 50%;
   height: 100%;
   position: relative;
+}
+.container {
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1180px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/**
+* INTR Style Guide Header
+* --------------------------------
+*/
+/**
+ * Authorization styles
+ * --------------------------------
+*/
+.auth-panel {
+  display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+.auth-panel__text {
+  color: rgba(239, 241, 243, 0.5);
+  font-size: 18px;
+  margin-right: 15px;
+}
+.auth-panel__picture {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.2);
+  -moz-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -icab-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Header styles
+ * --------------------------------
+*/
+.header {
+  background-color: #1b1f3f;
+  padding: 8px 0;
+}
+.header .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+/**
+ * INTR Style Guide Header
+ * --------------------------------
+*/
+/**
+ * Footer styles
+ * --------------------------------
+*/
+.footer {
+  padding: 25px 0;
+}
+.footer-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.footer-list__item {
+  margin-left: 50px;
+}
+.footer-list__item:first-child {
+  margin: 0;
+}
+.footer-list__img {
+  max-width: 170px;
+  max-height: 42px;
 }

@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Availa</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 
 <body>
-    <div class="header">
+<div class="header">
+    <div class="container">
         <div class="logo">
-            <a href="javascript:void(0)" class="logo__link">
+            <a href="javascript:void(0)" class="logo__link link">
                 <span class="logo__item"></span>
                 <span class="logo__item logo__item--2"></span>
+                <span class="logo__item logo__item--3"></span>
                 <span class="logo__text">Imaging Availability</span>
             </a>
         </div>
         <div class="auth-panel">
-            <div class="auth-panel__text">Refreshed 29 Minutes</div>
+            <div class="auth-panel__text">Refreshed 29 Minutes ago</div>
             <div class="auth-panel__picture">B</div>
         </div>
     </div>
+</div>
 
-    <section class="content">
+<section class="content content--search">
+    <div class="container">
         <div class="title">
             <h2 class="title__item">
                 Imaging Appointment Availability
@@ -65,18 +70,30 @@
                 </div>
             </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <div class="footer">
+<div class="footer">
+    <div class="container">
         <div class="footer-list">
-            <img class="footer-list__item" src="images/logo/BWH@2x.png"
-                 alt="Brigham Health" title="Brigham Health"/>
-            <img class="footer-list__item" src="images/logo/DF@2x.png"
-                 alt="Dana-Farber" title="Dana-Farber"/>
-            <img class="footer-list__item" src="images/logo/PH@2x.png"
-                 alt="Partners" title="Partners"/>
+            <a class="link footer-list__item" href="javascript:void(0)">
+                <img class="footer-list__img" src="images/logo/BWH@2x.png"
+                     alt="Brigham Health" title="Brigham Health"/>
+            </a>
+            <a class="link footer-list__item" href="javascript:void(0)">
+                <img class="footer-list__img" src="images/logo/DF@2x.png"
+                     alt="Dana-Farber" title="Dana-Farber"/>
+            </a>
+            <a class="link footer-list__item" href="javascript:void(0)">
+                <img class="footer-list__img" src="images/logo/PH@2x.png"
+                     alt="Partners" title="Partners"/>
+            </a>
+
         </div>
     </div>
+
+</div>
+<script src="scripts/jquery-3.2.1.min.js"></script>
 
 </body>
 </html>
