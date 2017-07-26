@@ -1,0 +1,77 @@
+/**
+* Availa logo styles
+* --------------------------------
+*/
+/**
+ * Logo styles
+ * --------------------------------
+*/
+.logo {
+  position: relative;
+}
+.logo__link {
+  text-transform: uppercase;
+  padding: 10px 0 10px 50px;
+  letter-spacing: 0.33rem;
+  display: inline-block;
+  line-height: normal;
+  cursor: pointer;
+}
+.logo__item {
+  width: 34px;
+  height: 34px;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  border: 1px solid #2adfff;
+  -webkit-box-shadow: 0 0 14px 0 #2adffe;
+  box-shadow: 0 0 14px 0 #2adffe;
+  -icab-border-radius: 50%;
+  border-radius: 50%;
+}
+.logo__item--2 {
+  top: 3px;
+  left: -1px;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  border: 1px solid #0083ea;
+  -webkit-box-shadow: 0 0 14px 0 #0083ea;
+  box-shadow: 0 0 14px 0 #0083ea;
+}
+.logo__item--3 {
+  top: 5px;
+  z-index: 0;
+  left: -2px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #7e55ba;
+  -webkit-box-shadow: 0 0 14px 0 #7d54b8;
+  box-shadow: 0 0 14px 0 #7d54b8;
+}
+.logo--absolute {
+  margin: 8px 0 0 -113px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.header .logo__link {
+  text-transform: uppercase;
+  padding: 8px 0 10px 56px;
+  letter-spacing: 0.2rem;
+  font-size: 18px;
+}
+.header .logo__item {
+  left: 8px;
+  top: 2px;
+}
+.header .logo__item--2 {
+  left: 5px;
+  top: 5px;
+}
+.header .logo__item--3 {
+  left: 2px;
+  top: 8px;
+}

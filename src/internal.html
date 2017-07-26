@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Availa</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="javascript:void(0)" class="logo__link">
+            <span class="logo__item"></span>
+            <span class="logo__item logo__item--2"></span>
+            <span class="logo__text">Imaging Availability</span>
+        </a>
+    </div>
+    <div class="auth-panel">
+        <div class="auth-panel__text">Refreshed 29 Minutes</div>
+        <div class="auth-panel__picture">B</div>
+    </div>
+</div>
+
+<div class="search">
+    <form class="form" action="" method="post">
+        <div class="form-field">
+            <label for="resources" class="label">
+                <select id="resources" name="resources" class="select">
+                    <option>MRI</option>
+                    <option>MRI2</option>
+                    <option>MRI3</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="resources" class="label">
+                <select id="site" name="site" class="select">
+                    <option>BWH</option>
+                    <option>BWH2</option>
+                    <option>BWh3</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="date" class="label">
+                <input id="date" type="text" name="date" value="" class="text" />
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="date" class="label">
+                <input id="zipcode" type="text" name="zipcode" value="" class="text" />
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="submit" class="label label-icon">
+                <i class="icon icon-search"></i>
+                <input id="submit" type="submit" name="submit" value="Search" class="button button-secondary" />
+            </label>
+        </div>
+    </form>
+</div>
+
+<section class="content">
+    <div class="schedule">
+
+        <div class="filter">
+            <form class="form" action="" method="post">
+                <div class="form-field">
+                    <label for="filter" class="label label-span">
+                        <span class="label-span__item">Filter</span>
+                        <select id="filter" name="filter" class="select">
+                            <option>Filter1</option>
+                            <option>Filter2</option>
+                            <option>Filter3</option>
+                        </select>
+                    </label>
+                </div>
+            </form>
+            <div class="tab-list">
+                <a href="javascript:void(0)" class="tab-list__item" title="One day">One day</a>
+                <a href="javascript:void(0)" class="tab-list__item" title="Next 3 days">
+                    Next 3 days
+                </a>
+                <a href="javascript:void(0)" class="tab-list__item" title="Next 7 days">
+                    Next 7 days
+                </a>
+            </div>
+        </div>
+
+        <div class="schedule-card">
+            <div class="schedule-card__title">
+
+            </div>
+            <div class="schedule-table">
+                <div class="table-head">
+                    <div class="table-head__title">Name</div>
+                    <div class="table-head__address">
+                        <i class="table-head__icon icon-marker"></i>
+                        Name
+                    </div>
+                    <div class="table-head__phone">
+                        09090-90900-9
+                    </div>
+                    <div class="table-head__name">
+                        09090-90900-9
+                    </div>
+                </div>
+
+                <div class="table-body">
+                    <i class="icon-sys-arrow-left swiper-table__icon swiper-button-disabled"></i>
+                    <i class="icon-sys-arrow-right swiper-table__icon"></i>
+
+                    <div class="swiper-container swiper-container-horizontal">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-active">
+                                <div class="swiper-items">
+                                    <div class="swiper-item">9:00 AM</div>
+                                    <div class="swiper-item">9:05 AM</div>
+                                    <div class="swiper-item">9:10 AM</div>
+                                    <div class="swiper-item">9:20 AM</div>
+                                    <div class="swiper-item">9:30 AM</div>
+                                    <div class="swiper-item">9:40 AM</div>
+                                    <div class="swiper-item">9:50 AM</div>
+                                    <div class="swiper-item">9:55-10:00 AM</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-wrap">
+        <div class="map" id="map"></div>
+    </div>
+</section>
+<div class="footer">
+    <div class="footer-list">
+        <img class="footer-list__item" src="images/logo/BWH@2x.png"
+             alt="Brigham Health" title="Brigham Health"/>
+        <img class="footer-list__item" src="images/logo/DF@2x.png"
+             alt="Dana-Farber" title="Dana-Farber"/>
+        <img class="footer-list__item" src="images/logo/PH@2x.png"
+             alt="Partners" title="Partners"/>
+    </div>
+</div>
+</body>
+</html>

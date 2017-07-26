@@ -1,0 +1,17 @@
+/**
+ * Coach-dashboard. Search
+ * --------------------------------
+*/
+/**
+ * Table of Contents Orders Page:
+*/
+.search .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.search .label-icon .icon {
+  margin: -13px 0 0 0;
+  left: 20px;
+  top: 50%;
+}

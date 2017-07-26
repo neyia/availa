@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Availa</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts/fonts.less" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="javascript:void(0)" class="logo__link link">
+                <span class="logo__item"></span>
+                <span class="logo__item logo__item--2"></span>
+                <span class="logo__item logo__item--3"></span>
+                <span class="logo__text">Imaging Availability</span>
+            </a>
+        </div>
+        <div class="auth-panel">
+            <div class="auth-panel__text">Refreshed 29 Minutes ago</div>
+            <div class="auth-panel__picture">B</div>
+        </div>
+    </div>
+</div>
+
+<section class="content content--search">
+    <div class="container">
+        <div class="wrapper wrapper-search">
+            <div class="title">
+                <h2 class="title__item">
+                    Imaging Appointment Availability
+                </h2>
+            </div>
+            <div class="search">
+                <form class="form" action="" method="post">
+                    <div class="form-field form-field--secondary">
+                        <label for="resources" class="label">
+                            <select id="resources" name="resources" class="select select--secondary">
+                                <option>MRI</option>
+                                <option>MRI2</option>
+                                <option>MRI3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary">
+                        <label for="site" class="label">
+                            <select id="site" name="site" class="select select--secondary">
+                                <option>BWH</option>
+                                <option>BWH2</option>
+                                <option>BWh3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary form-field--small">
+                        <label for="date" class="label">
+                            <input id="date" type="text" name="date" value="" class="text text--secondary" placeholder="Date" />
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary">
+                        <label for="date" class="label">
+                            <input id="zipcode" type="text" name="zipcode" value="" class="text text--secondary" placeholder="Zipcode/address" />
+                        </label>
+                    </div>
+                    <div class="form-field form-field--secondary form-field--small">
+                        <label for="submit" class="label label-icon">
+                            <i class="icon icon-search"></i>
+                            <input id="submit" type="submit" name="submit" value="Search" class="button button--icon button--secondary" />
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-list">
+            <a class="link footer-list__item" href="javascript:void(0)">
+                <img class="footer-list__img" src="images/logo/BWH@2x.png"
+                     alt="Brigham Health" title="Brigham Health"/>
+            </a>
+            <a class="link footer-list__item" href="javascript:void(0)">
+                <img class="footer-list__img" src="images/logo/DF@2x.png"
+                     alt="Dana-Farber" title="Dana-Farber"/>
+            </a>
+            <a class="link footer-list__item" href="javascript:void(0)">
+                <img class="footer-list__img" src="images/logo/PH@2x.png"
+                     alt="Partners" title="Partners"/>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/jquery-ui.js"></script>
+<script src="scripts/jquery.smartPlaceholder.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.text').smartPlaceholder({
+            backgroundColor: 'transparent',
+            color: '#a6a9b5',
+            position: 'top',
+            mode: 'inline',
+            size: 14
+        });
+    });
+    $( function() {
+        $( '#date' ).datepicker({
+            dateFormat: 'd MM, y'
+        });
+    });
+    $(function() {
+        $('.select')
+            .selectmenu()
+            .selectmenu('menuWidget')
+            .addClass('overflow');
+    });
+</script>
+</body>
+</html>
