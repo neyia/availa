@@ -10,8 +10,19 @@
   display: -ms-flexbox;
   display: flex;
 }
-.search .label-icon .icon {
+.search .label-icon .icon--button {
   margin: -13px 0 0 0;
   left: 20px;
   top: 50%;
+}
+.search .label-icon .icon--select {
+  margin: -10px 0 0 0;
+  position: absolute;
+  font-size: 50px;
+  color: #1b1f3f;
+  height: 40px;
+  width: 45px;
+  left: auto;
+  right: 10px;
+  top: 0;
 }

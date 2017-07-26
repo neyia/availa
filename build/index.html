@@ -5,8 +5,8 @@
     <title>Availa</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
-    <link rel="stylesheet" type="text/css" href="styles/fonts/fonts.less" />
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 
 <body>
@@ -38,21 +38,23 @@
             <div class="search">
                 <form class="form" action="" method="post">
                     <div class="form-field form-field--secondary">
-                        <label for="resources" class="label">
+                        <label for="resources" class="label label-icon">
                             <select id="resources" name="resources" class="select select--secondary">
                                 <option>MRI</option>
                                 <option>MRI2</option>
                                 <option>MRI3</option>
                             </select>
+                            <i class="icon icon--select icon-arrow-down"></i>
                         </label>
                     </div>
                     <div class="form-field form-field--secondary">
-                        <label for="site" class="label">
+                        <label for="site" class="label label-icon">
                             <select id="site" name="site" class="select select--secondary">
                                 <option>BWH</option>
                                 <option>BWH2</option>
                                 <option>BWh3</option>
                             </select>
+                            <i class="icon icon--select icon-arrow-down"></i>
                         </label>
                     </div>
                     <div class="form-field form-field--secondary form-field--small">
@@ -67,7 +69,7 @@
                     </div>
                     <div class="form-field form-field--secondary form-field--small">
                         <label for="submit" class="label label-icon">
-                            <i class="icon icon-search"></i>
+                            <i class="icon icon--button icon-search"></i>
                             <input id="submit" type="submit" name="submit" value="Search" class="button button--icon button--secondary" />
                         </label>
                     </div>
@@ -120,6 +122,10 @@
             .selectmenu()
             .selectmenu('menuWidget')
             .addClass('overflow');
+
+        $('.icon--select').on('click', function () {
+            $(this).closest('.label').find('.select').selectmenu( "open" );
+        });
     });
 </script>
 </body>

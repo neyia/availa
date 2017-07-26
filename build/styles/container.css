@@ -15,7 +15,7 @@
   display: flex;
 }
 .content--search {
-  margin-bottom: -136px;
+  margin-bottom: -97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,5 +68,4 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-  margin: -210px 0 0 0;
 }
