@@ -34,3 +34,11 @@
   -khtml-opacity: 0.03;
   opacity: 0.03;
 }
+.label-icon {
+  position: relative;
+}
+.label-icon .icon {
+  position: absolute;
+  font-size: 23px;
+  color: #ffffff;
+}

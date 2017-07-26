@@ -503,6 +503,14 @@ p {
   -khtml-opacity: 0.03;
   opacity: 0.03;
 }
+.label-icon {
+  position: relative;
+}
+.label-icon .icon {
+  position: absolute;
+  font-size: 23px;
+  color: #ffffff;
+}
 /**
  * INTR Style Guide Header
  * --------------------------------
@@ -542,6 +550,8 @@ p {
 }
 .form-field--secondary {
   margin: 0 0 0 -4px;
+  max-width: 337px;
+  width: 100%;
 }
 .form-field--secondary:first-child {
   margin: 0;
@@ -585,7 +595,12 @@ p {
 .select--secondary,
 .ui-selectmenu-button.ui-button.ui-widget {
   border: solid 2px #1b1f3f;
-  width: 267px;
+  max-width: 300px;
+  width: 100%;
+}
+.form-field--small {
+  width: 100%;
+  max-width: 200px;
 }
 /**
  * INTR Style Guide Header
@@ -618,6 +633,11 @@ p {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+}
+.search .label-icon .icon {
+  margin: -13px 0 0 0;
+  left: 20px;
+  top: 50%;
 }
 /**
 * INTR Style Guide Header
@@ -701,6 +721,11 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 0 2%;
+  }
 }
 .wrapper-search {
   display: -webkit-box;

@@ -11,3 +11,8 @@
   display: -ms-flexbox;
   display: flex;
 }
+.search .label-icon .icon {
+  margin: -13px 0 0 0;
+  left: 20px;
+  top: 50%;
+}
