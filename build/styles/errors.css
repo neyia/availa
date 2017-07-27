@@ -1,19 +1,19 @@
 /**
- * INTR Style Guide Errors
+ * Availa
  * --------------------------------
 */
 /**
  * Errors styles
  * --------------------------------
 */
-.error-block .input,
+.error-block .text,
 .error-block .select,
 .error-block .ui-selectmenu-button {
-  border: 1px solid #c80000;
-  background-color: #fae6e6;
+  border: 1px solid #C80000;
+  background-color: #FAE6E6;
 }
 .error {
-  color: #c80000;
+  color: #C80000;
   display: block;
   font-size: 12px;
   font-weight: 400;

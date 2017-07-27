@@ -17,6 +17,9 @@
   line-height: normal;
   cursor: pointer;
 }
+.logo__link:hover .logo__text {
+  opacity: 0.8;
+}
 .logo__item {
   width: 34px;
   height: 34px;
@@ -27,12 +30,6 @@
   display: inline-block;
   border: 1px solid #2adfff;
   box-shadow: 0 0 14px 0 #2adffe;
-  -moz-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -icab-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 .logo__item--2 {

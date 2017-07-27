@@ -1,5 +1,5 @@
 /**
-* INTR Style Guide Header
+* Availa
 * --------------------------------
 */
 /**
@@ -8,17 +8,19 @@
 */
 .auth-panel {
   display: flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
   align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
 }
 .auth-panel__text {
   color: rgba(239, 241, 243, 0.5);
   font-size: 18px;
   margin-right: 15px;
+  position: relative;
+}
+.auth-panel__text-icon {
+  font-size: 30px;
+  position: absolute;
+  left: -35px;
+  color: #fff;
 }
 .auth-panel__picture {
   width: 40px;
@@ -30,11 +32,5 @@
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.2);
-  -moz-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -icab-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }

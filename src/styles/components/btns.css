@@ -1,5 +1,5 @@
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
@@ -16,12 +16,6 @@
   line-height: normal;
   width: 337px;
   height: 57px;
-}
-.button--primary {
-  background-color: #37a8af;
-}
-.button--secondary {
-  background-color: #1b1f3f;
 }
 .button--icon {
   width: 185px;
@@ -40,5 +34,30 @@
 .label-icon .icon {
   position: absolute;
   font-size: 23px;
+  color: #ffffff;
+}
+.button--primary {
+  background-color: #37a8af;
+  color: #ffffff;
+}
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #37a8af;
+}
+.button--primary:active {
+  background-color: #37a8af;
+  color: #ffffff;
+}
+.button-secondary {
+  background-color: #1b1f3f;
+  color: #ffffff;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: #1b1f3f;
+  color: #ffffff;
+}
+.button-secondary:active {
+  background-color: #1b1f3f;
   color: #ffffff;
 }

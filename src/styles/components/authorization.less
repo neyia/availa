@@ -1,5 +1,5 @@
 /**
-* INTR Style Guide Header
+* Availa
 * --------------------------------
 */
 /**
@@ -10,17 +10,19 @@
 
 .auth-panel{
     display: flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
     align-items: center;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
 
     &__text{
         color: rgba(239, 241, 243, 0.5);
         font-size: 18px;
         margin-right: 15px;
+        position: relative;
+        &-icon{
+            font-size: 30px;
+            position: absolute;
+            left: -35px;
+            color: #fff;
+        }
     }
 
     &__picture{
@@ -33,125 +35,6 @@
         text-align: center;
         text-transform: uppercase;
         background-color: rgba(255, 255, 255, 0.2);
-        -moz-border-radius: 50%;
-        -khtml-border-radius: 50%;
-        -o-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -icab-border-radius: 50%;
-        -webkit-border-radius: 50%;
         border-radius: 50%;
     }
 }
-
-
-//.authorization {
-//    float: right;
-//    line-height: @col_top_height;
-//
-//    @media only screen  and(max-width: (@tablet_horizontal)) {
-//        display: none;
-//    }
-//}
-//
-//.auth-panel {
-//    position: relative;
-//    display: inline-block;
-//    vertical-align: top;
-//    margin-left: 20px;
-//    margin-left: 1.429rem;
-//    &:hover {
-//        .auth-menu {
-//            display: block;
-//        }
-//    }
-//}
-//
-//.auth-data {
-//    position: relative;
-//    padding-right: 22px;
-//
-//    &__description {
-//        vertical-align: middle;
-//        display: inline-block;
-//        position: relative;
-//    }
-//
-//    &__avatar {
-//        width: 100%;
-//        .border-radius(50%);
-//    }
-//
-//    &__picture {
-//        .border-radius(7px);
-//        text-align: center;
-//        height: 40px;
-//        width: 40px;
-//        font-size: 20px;
-//        font-weight: 700;
-//        line-height: 40px;
-//        color: @gray_bg_3;
-//        background-color: @gray_bg_5;
-//        text-transform: uppercase;
-//        font-family: 'Open Sans Condensed', sans-serif;
-//    }
-//
-//    &__overlay {
-//        border: 7px solid @gray_bg_8;
-//        .border-radius(50%);
-//        position: absolute;
-//        bottom: -7px;
-//        right: -7px;
-//        left: -7px;
-//        top: -7px;
-//    }
-//
-//    &__link {
-//        text-overflow: ellipsis;
-//        display: inline-block;
-//        vertical-align: top;
-//        white-space: nowrap;
-//        margin-left: 5px;
-//        overflow: hidden;
-//        max-width: 74px;
-//    }
-//
-//    &__icon {
-//        position: absolute;
-//        color: #ffffff;
-//        top: 50%;
-//        right: 0;
-//        margin-top: -5px;
-//        font-size: 0.8rem;
-//    }
-//}
-//
-//.auth-menu {
-//    box-shadow: 0 6px 15px 1px @gray_bg_3;
-//    background-color: #ffffff;
-//    position: absolute;
-//    min-width: 170px;
-//    padding: 8px 0;
-//    display: none;
-//    top: 65px;
-//    right: 0;
-//    z-index: 3;
-//    .border-radius(3px);
-//
-//    &__icon {
-//        color: @gray_bg_3;
-//        font-size: 15px;
-//    }
-//
-//}
-//
-//.auth-list {
-//    &__item {
-//        line-height: 36px;
-//        &--divider {
-//            height: 4px;
-//            margin-top: 4px;
-//            border-top: 1px solid @secondary;
-//        }
-//    }
-//}
-

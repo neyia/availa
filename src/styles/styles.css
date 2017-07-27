@@ -425,6 +425,9 @@ p {
   line-height: normal;
   cursor: pointer;
 }
+.logo__link:hover .logo__text {
+  opacity: 0.8;
+}
 .logo__item {
   width: 34px;
   height: 34px;
@@ -435,12 +438,6 @@ p {
   display: inline-block;
   border: 1px solid #2adfff;
   box-shadow: 0 0 14px 0 #2adffe;
-  -moz-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -icab-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 .logo__item--2 {
@@ -486,7 +483,7 @@ p {
   top: 8px;
 }
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
@@ -503,12 +500,6 @@ p {
   line-height: normal;
   width: 337px;
   height: 57px;
-}
-.button--primary {
-  background-color: #37a8af;
-}
-.button--secondary {
-  background-color: #1b1f3f;
 }
 .button--icon {
   width: 185px;
@@ -529,8 +520,33 @@ p {
   font-size: 23px;
   color: #ffffff;
 }
+.button--primary {
+  background-color: #37a8af;
+  color: #ffffff;
+}
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #37a8af;
+}
+.button--primary:active {
+  background-color: #37a8af;
+  color: #ffffff;
+}
+.button-secondary {
+  background-color: #1b1f3f;
+  color: #ffffff;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: #1b1f3f;
+  color: #ffffff;
+}
+.button-secondary:active {
+  background-color: #1b1f3f;
+  color: #ffffff;
+}
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
@@ -577,88 +593,12 @@ p {
 .form-field.btn-block {
   margin: 30px 0 0 0;
 }
-.text,
-.select,
-.ui-selectmenu-button.ui-button.ui-widget {
-  outline: none;
-  width: 337px;
-  height: 57px;
-  color: #1b1f3f;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 15px 20px;
-  border: solid 2px #37a8af;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  touch-action: manipulation;
-  -moz-border-radius: 0;
-  -khtml-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  -icab-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-.text:active,
-.select:active,
-.ui-selectmenu-button.ui-button.ui-widget:active,
-.text:hover,
-.select:hover,
-.ui-selectmenu-button.ui-button.ui-widget:hover {
-  background-color: #ffffff;
-}
-.text .ui-selectmenu-icon.ui-icon,
-.select .ui-selectmenu-icon.ui-icon,
-.ui-selectmenu-button.ui-button.ui-widget .ui-selectmenu-icon.ui-icon {
-  background-image: none;
-}
-.ui-selectmenu-menu.ui-selectmenu-open .ui-menu .ui-menu-item-wrapper {
-  background: #ffffff;
-  border: solid 1px transparent;
-  color: #1b1f3f;
-  padding: 3px 1em;
-  font-size: 18px;
-  margin: 0;
-}
-.ui-selectmenu-menu.ui-selectmenu-open .ui-menu .ui-menu-item-wrapper.ui-state-active:hover,
-.ui-selectmenu-menu.ui-selectmenu-open .ui-menu .ui-menu-item-wrapper.ui-state-active {
-  color: #1b1f3f;
-  background: #ebeef0;
-  padding: 3px 1em;
-  font-size: 18px;
-  line-height: normal;
-  margin: 0;
-  border: solid 1px transparent;
-}
-.text--secondary,
-.select--secondary,
-.ui-selectmenu-button.ui-button.ui-widget {
-  border: solid 2px #1b1f3f;
-  max-width: 300px;
-  width: 100%;
-  background-color: #ffffff;
-}
-.ui-selectmenu-menu.ui-selectmenu-open {
-  border-bottom: 1px solid #1b1f3f;
-  border-right: 1px solid #1b1f3f;
-  border-left: 1px solid #1b1f3f;
-  margin: -2px 0 0 0;
-  border-top: none;
-}
 .form-field--small {
   width: 100%;
   max-width: 200px;
 }
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
@@ -677,7 +617,7 @@ p {
   letter-spacing: 0.043rem;
 }
 /**
- * Coach-dashboard. Search
+ * Availa
  * --------------------------------
 */
 /**
@@ -706,7 +646,7 @@ p {
   top: 0;
 }
 /**
-* INTR Style Guide Header
+* Availa
 * --------------------------------
 */
 /**
@@ -728,7 +668,7 @@ body {
   line-height: 1.4;
 }
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
@@ -739,19 +679,11 @@ body {
   height: 100%;
 }
 .content--secondary {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .content--search {
   margin-bottom: -97px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -785,8 +717,6 @@ body {
   min-width: 1000px;
   max-width: 1180px;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 1280px) {
@@ -795,9 +725,6 @@ body {
   }
 }
 .wrapper-search {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -805,7 +732,7 @@ body {
   flex-flow: column;
 }
 /**
-* INTR Style Guide Header
+* Availa
 * --------------------------------
 */
 /**
@@ -814,17 +741,19 @@ body {
 */
 .auth-panel {
   display: flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
   align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
 }
 .auth-panel__text {
   color: rgba(239, 241, 243, 0.5);
   font-size: 18px;
   margin-right: 15px;
+  position: relative;
+}
+.auth-panel__text-icon {
+  font-size: 30px;
+  position: absolute;
+  left: -35px;
+  color: #fff;
 }
 .auth-panel__picture {
   width: 40px;
@@ -836,16 +765,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.2);
-  -moz-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -icab-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
@@ -870,7 +793,7 @@ body {
   justify-content: space-between;
 }
 /**
- * INTR Style Guide Header
+ * Availa
  * --------------------------------
 */
 /**
