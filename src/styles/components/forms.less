@@ -7,57 +7,66 @@
 */
 @import "../variables";
 
-.form{
-    &--absolute{
-        margin: -82px 0 0 -189px;
+.form {
+    &--absolute {
+        margin:   -82px 0 0 -189px;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top:      50%;
+        left:     50%;
     }
-    &--filter{
-       .label{
-           display: flex;
-           align-items: center;
-       }
+    &--filter {
+        .label {
+            display:     flex;
+            align-items: center;
+            position:    relative;
+        }
+        .icon--select {
+            margin:    0px 0 0;
+            position:  absolute;
+            font-size: 40px;
+            color:     #1b1f3f;
+            height:    30px;
+            width:     35px;
+            left:      auto;
+            right:     5px;
+            top:       0;
+        }
     }
 }
 
-.form-field{
+.form-field {
     margin: 15px 0 0 0;
 
-    &:first-child{
+    &:first-child {
         margin: 0;
     }
 
-    &--secondary{
-        margin: 0 0 0 -4px;
+    &--secondary {
+        margin:    0 0 0 -4px;
         max-width: 337px;
-        width: 100%;
-        &:first-child{
+        width:     100%;
+        &:first-child {
             margin: 0;
         }
     }
 }
 
-.label-span{
-    &__item{
-        color: #a6a9b5;
+.label-span {
+    &__item {
+        color:        #a6a9b5;
         margin-right: 25px;
     }
 }
 
-
-.form-field.btn-block{
+.form-field.btn-block {
     margin: 30px 0 0 0;
 }
 
-.label-icon{
-
+.label-icon {
 }
 
-
-.form-field--small{
-    width: 100%;
+.form-field--small {
+    width:     100%;
     max-width: 200px;
 }
 
