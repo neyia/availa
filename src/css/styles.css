@@ -742,6 +742,7 @@ body {
 }
 .content--internal {
   padding: 15px 0;
+  height: initial;
   min-height: 760px;
   background-color: #f6f6f6;
 }
@@ -1137,12 +1138,28 @@ body {
 }
 .schedule-card__title {
   background-color: #efefef;
+  position: relative;
   padding: 10px 15px;
   color: #808399;
   display: none;
 }
+.schedule-card__title-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 225px;
+  padding: 0 15px;
+}
+.schedule-card__title .swiper-container {
+  text-align: center;
+}
 .schedule .filter + .schedule-card .schedule-card__title {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .filter {
   padding: 16px;
@@ -1230,22 +1247,30 @@ body {
   flex: 1 1 auto;
   position: relative;
 }
-.table-body__icon {
+.schedule__icon {
   position: absolute;
-  top: -40px;
+  top: 50%;
   font-size: 40px;
   color: #1b1f3f;
+  z-index: 3;
+  margin: -20px 0 0 0;
 }
-.table-body__icon-prev {
-  left: 0;
+.schedule__icon-prev {
+  left: -25px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.table-body__icon-next {
+.schedule__icon-prev.swiper-button-disabled {
+  opacity: 0.3;
+}
+.schedule__icon-next {
   left: auto;
-  right: 0;
+  right: -15px;
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
+}
+.schedule__icon-next.swiper-button-disabled {
+  opacity: 0.3;
 }
 .swiper-items {
   padding: 8px 0;
@@ -1266,6 +1291,11 @@ body {
 }
 .swiper-item--active {
   background-color: #d9dbdd;
+}
+.schedule-card--week .swiper-slide__width {
+  max-width: 60px;
+  word-break: break-word;
+  display: inline-block;
 }
 /**
  * Availa

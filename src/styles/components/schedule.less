@@ -15,14 +15,26 @@
         }
         &__title{
             background-color: #efefef;
+            position: relative;
             padding: 10px 15px;
             color: #808399;
             display: none;
+
+            &-item{
+                display: flex;
+                flex: 1 1 auto;
+                width: 225px;
+                padding: 0 15px;
+            }
+
+            .swiper-container{
+                text-align: center;
+            }
         }
     }
 
     .filter + .schedule-card .schedule-card__title{
-        display: block;
+        display: flex;
     }
 }
 
@@ -95,29 +107,38 @@
     width: 70%;
     flex: 1 1 auto;
     position: relative;
+}
 
-    &__icon{
-        position: absolute;
-        top: -40px;
-        font-size: 40px;
-        color: #1b1f3f;
+.schedule__icon{
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: #1b1f3f;
+    z-index: 3;
+    margin: -20px 0 0 0;
 
-        &-prev{
-            left: 0;
-            -ms-transform: rotate(90deg);
-            -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    &-prev{
+        left: -25px;
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        &.swiper-button-disabled{
+            opacity: 0.3;
         }
+    }
 
-        &-next{
-            left: auto;
-            right: 0;
-            -ms-transform: rotate(270deg);
-            -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    &-next{
+        left: auto;
+        right: -15px;
+        -ms-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+        &.swiper-button-disabled{
+            opacity: 0.3;
         }
     }
 }
+
 .swiper-items{
     padding: 8px 0;
 }
@@ -138,4 +159,10 @@
     &--active{
         background-color: #d9dbdd;
     }
+}
+
+.schedule-card--week .swiper-slide__width{
+    max-width: 60px;
+    word-break: break-word;
+    display: inline-block;
 }
