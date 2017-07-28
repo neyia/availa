@@ -20,51 +20,64 @@
 }
 
 .ui-widget-header.ui-datepicker-header .ui-datepicker-prev {
+    border: none;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    top: 0;
     .ui-icon{
         top: 8px;
-        width: 1em;
-        height: 1em;
-        font-size: 18px;
-        padding: 9px;
+        width: 20px;
+        height: 20px;
+        padding: 6px;
+        left: 8px;
+        border: none;
+        background-size: 10px;
         background-repeat: no-repeat;
-        background-position: 12px;
-        background-size: 18px;
-        -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        -o-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
-        left: 5px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PHRpdGxlPjwvdGl0bGU+PGcgaWQ9Imljb21vb24taWdub3JlIj48L2c+PHBhdGggZD0iTTY5NiA3MzJjMTAtMTIgMTAtMzAgMC00MGwtMTgwLTE4MCAxODAtMTgwYzEwLTEwIDgtMzAtNC00MC0xMC04LTI0LTgtMzYgMGwtMjAwIDIwMGMtMTAgMTItMTAgMjggMCA0MGwyMDAgMjAwYzEyIDEwIDI4IDEwIDQwIDB6Ij48L3BhdGg+PC9zdmc+);
+        background-position: center;
+        transition: all .1s ease-in-out;
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMDYgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDYgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8dGl0bGU+PC90aXRsZT4NCjxnIGlkPSJpY29tb29uLWlnbm9yZSI+DQo8L2c+DQo8cGF0aCBkPSJNMjY4LjUsNDY4YzEwLTEyLDEwLTMwLDAtNDBsLTE4MC0xODBsMTgwLTE4MGMxMC0xMCw4LTMwLTQtNDBjLTEwLTgtMjQtOC0zNiwwbC0yMDAsMjAwYy0xMCwxMi0xMCwyOCwwLDQwbDIwMCwyMDANCglDMjQwLjUsNDc4LDI1Ni41LDQ3OCwyNjguNSw0Njh6Ii8+DQo8L3N2Zz4NCg==");
+        &:hover{
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMDYgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDYgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8dGl0bGU+PC90aXRsZT4NCjxnIGlkPSJpY29tb29uLWlnbm9yZSI+DQo8L2c+DQo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjY4LjUsNDY4YzEwLTEyLDEwLTMwLDAtNDBsLTE4MC0xODBsMTgwLTE4MGMxMC0xMCw4LTMwLTQtNDBjLTEwLTgtMjQtOC0zNiwwbC0yMDAsMjAwYy0xMCwxMi0xMCwyOCwwLDQwDQoJbDIwMCwyMDBDMjQwLjUsNDc4LDI1Ni41LDQ3OCwyNjguNSw0Njh6Ii8+DQo8L3N2Zz4NCg==");
+            background-color: #37a8af;
+            background-repeat: no-repeat;
+            border-color: transparent;
+        }
     }
-    &:hover{
-        background-color: transparent;
-        border-color: transparent;
-    }
+
 }
-
+.ui-datepicker.ui-widget.ui-widget-content{
+    border: solid 2px #1b1f3f;
+    margin: -2px 0 0 0;
+    padding: 0;
+}
 .ui-widget-header.ui-datepicker-header .ui-datepicker-next {
+    border: none;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    right: 0;
     .ui-icon{
         top: 8px;
-        width: 1em;
-        height: 1em;
-        font-size: 18px;
-        padding: 9px;
-        background-repeat: no-repeat;
-        background-position: 12px;
-        background-size: 18px;
-        -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        -o-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
+        width: 20px;
+        height: 20px;
+        padding: 6px;
+        right: 0;
         left: auto;
-        right: 5px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PHRpdGxlPjwvdGl0bGU+PGcgaWQ9Imljb21vb24taWdub3JlIj48L2c+PHBhdGggZD0iTTMyOCA3MzJjLTEwLTEyLTEwLTMwIDAtNDBsMTgwLTE4MC0xODAtMTgwYy0xMC0xMC04LTMwIDQtNDAgMTAtOCAyNC04IDM2IDBsMjAwIDIwMGMxMCAxMiAxMCAyOCAwIDQwbC0yMDAgMjAwYy0xMiAxMC0yOCAxMC00MCAweiI+PC9wYXRoPjwvc3ZnPg==);
 
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all .1s ease-in-out;
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMDYgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDYgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8dGl0bGU+PC90aXRsZT4NCjxnIGlkPSJpY29tb29uLWlnbm9yZSI+DQo8L2c+DQo8cGF0aCBkPSJNMzMsMjkuNWMtMTAsMTItMTAsMzAsMCw0MGwxODAsMTgwbC0xODAsMTgwYy0xMCwxMC04LDMwLDQsNDBjMTAsOCwyNCw4LDM2LDBsMjAwLTIwMGMxMC0xMiwxMC0yOCwwLTQwTDczLDI5LjUNCglDNjEsMTkuNSw0NSwxOS41LDMzLDI5LjV6Ii8+DQo8L3N2Zz4NCg==");
+        &:hover{
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMDYgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDYgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkNGQ0ZDO30NCjwvc3R5bGU+DQo8dGl0bGU+PC90aXRsZT4NCjxnIGlkPSJpY29tb29uLWlnbm9yZSI+DQo8L2c+DQo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzMsMjkuNWMtMTAsMTItMTAsMzAsMCw0MGwxODAsMTgwbC0xODAsMTgwYy0xMCwxMC04LDMwLDQsNDBjMTAsOCwyNCw4LDM2LDBsMjAwLTIwMGMxMC0xMiwxMC0yOCwwLTQwDQoJTDczLDI5LjVDNjEsMTkuNSw0NSwxOS41LDMzLDI5LjV6Ii8+DQo8L3N2Zz4NCg==");
+            background-color: #37a8af;
+            background-repeat: no-repeat;
+            border-color: transparent;
+        }
     }
-    &:hover{
-        background-color: transparent;
-        border-color: transparent;
-    }
+
 }
 
 .ui-datepicker.ui-widget .ui-state-default,
@@ -74,6 +87,7 @@
     border: 1px solid transparent;
     background: transparent;
     font-weight: normal;
+    text-align: center;
     color: #1b1f3f;
 }
 .ui-datepicker.ui-widget .ui-datepicker-calendar .ui-state-default:hover,
@@ -99,7 +113,16 @@
     font-size: 18px;
     text-align: left;
     color: #1b1f3f;
+    font-weight: normal;
 }
 .ui-datepicker-year{
     display: none;
+}
+
+.ui-datepicker .ui-datepicker-calendar thead tr{
+    border-bottom: 2px solid #1b1f3f;
+}
+.ui-datepicker .ui-datepicker-calendar th{
+    font-weight: 600;
+    color: #a3a7b3;
 }

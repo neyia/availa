@@ -31,61 +31,42 @@ gulp.task('webserver', function () {
 /* HTML */
 gulp.task('html', function () {
     return gulp.src('src/*.html')
-        .pipe(processhtml({
-            recursive: true
-        }))
-        .pipe(gulp.dest('build/'))
-        .pipe(reload({stream: true}));
+        .pipe(processhtml({recursive: true}))
+        .pipe(gulp.dest('build/')).pipe(reload({stream: true}));
 });
 /* Images */
 gulp.task('images', function () {
     return gulp.src('src/images/**/*')
-        .pipe(gulp.dest('build/images/'))
         .pipe(gulp.dest('build/images/')).pipe(reload({stream: true}));
 });
-/* Icons */
-// gulp.task('icons', function () {
-//     return gulp.src('src/icons/*.svg')
-//         .pipe(gulp.dest('build/icons/'))
-//         .pipe(gulp.dest('build/icons/')).pipe(reload({stream: true}));
-// });
 /* Fonts */
 gulp.task('fonts', function () {
-    return gulp.src('src/styles/fonts/*')
-        .pipe(gulp.dest('build/styles/fonts/'))
-        .pipe(gulp.dest('build/styles/fonts/')).pipe(reload({stream: true}));
+    return gulp.src('src/fonts/*')
+        .pipe(gulp.dest('build/fonts/')).pipe(reload({stream: true}));
 });
 /* JavaScript */
 gulp.task('js', function () {
     return gulp.src('src/scripts/*.js')
-        .pipe(gulp.dest('build/scripts/'))
         .pipe(gulp.dest('build/scripts/')).pipe(reload({stream: true}));
 });
 /* Styles */
 gulp.task('less', function () {
     return gulp.src([
-        'src/styles/fonts/*.less',
-        'src/styles/components/*.less'
+        'src/styles/styles.less'
     ])
-        .pipe(less({
-            paths: [path.join('src/styles', 'less', 'includes')]
-        }))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('build/styles'))
-        .pipe(reload({stream: true}));
+    .pipe(less({
+        paths: [path.join('src/styles', 'less', 'components')]
+    }))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(gulp.dest('src/css')).pipe(reload({stream: true}));
 });
 
-gulp.task('collect', function () {
-    return gulp.src('build/styles/*.css')
-        .pipe(concatCss("style.css"))
-        .pipe(gulp.dest('build/styles'));
-});
 gulp.task('minificate', function(){
-    return gulp.src('build/styles/style.css')
-        .pipe(gulpIf('*.css', cssnano()))
+    return gulp.src('src/css/styles.css')
+        .pipe(gulpIf('styles.css', cssnano()))
         .pipe(gulp.dest('build/styles'))
         .pipe(reload({stream: true}));
 });
@@ -107,11 +88,11 @@ gulp.task('watch', ['webserver'], function () {
     watch('src/images/*.png', function (event, cb) {
         gulp.start('images');
     });
-    // watch('src/icons/*.svg', function (event, cb) {
-    //     gulp.start('icons');
-    // });
     watch(['src/styles/*.less'], function (event, cb) {
         gulp.start('less');
+    });
+    watch(['build/styles/styles.css'], function (event, cb) {
+        gulp.start('minificate');
     });
 });
 /* Default */
