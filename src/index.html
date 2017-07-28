@@ -122,10 +122,11 @@
         });
     });
     $(function() {
-        $('.select')
-            .selectmenu()
-            .selectmenu('menuWidget')
-            .addClass('overflow');
+        $.each($('.select'), function () {
+            $(this).closest('.label').find('.select').selectmenu()
+                .selectmenu('menuWidget')
+                .addClass('secondary');
+        });
 
         $('.icon--select').on('click', function () {
             $(this).closest('.label').find('.select').selectmenu( "open" );
